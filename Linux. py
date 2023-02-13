@@ -1,0 +1,8 @@
+import os
+                                                      def find_recycled_files(path):
+    if os.path.isdir(path):                                   for filename in os.listdir(path):
+            print("[+] Found file: " + filename)          else:
+        print("[-] Path is not a directory or does not exist")
+                                                      if __name__ == '__main__':
+    recycled_path = "/home/kali"                      
+    find_recycled_files(recycled_path)
